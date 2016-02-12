@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
-<title>Photoshop</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+    <title>Photoshop</title>
+    <script src="jquery/jquery-1.12.0.js"></script>
+
+    <script>
+    
+        
+        
+        $(document).ready(function(){
+            $("#flip").click(function(){
+               $("#panel").slideToggle("slow");
+            });
+        });
+    
+    </script>
+    
 </head>
 <body>
 
      <table id="mainTable" >
     
         <tr>
-         <td onclick="javascript:location.href='aboutme.html'" class="td">Magamról</td>
-         <td onclick="javascript:location.href='photoshop.html'" class="td">Photoshop</td>
-         <td onclick="javascript:location.href='photos.html'" class="td">Analóg fotózás</td>
+         <td onclick="javascript:location.href='aboutme.html'" class="tdMain">Magamról</td>
+         <td onclick="javascript:location.href='photoshop.html'" class="tdMain">Photoshop</td>
+         <td onclick="javascript:location.href='photos.html'" class="tdMain">Analóg fotózás</td>
          </tr>
          
     </table>
     
+    <h2>Eddig kész munkák</h2>
 
+  <!--  <table id="psImages">
+    
+    <tr>
+        <td>
+            <p>Leia gag</p>
+            <p><img id="img1" src="images/photoshop/spoiler%20leia2.jpg"/></p>
+        </td>
+        </tr>
+    
+    <tr>
+        <td>
+            <p>Tetkó terv</p>
+            <p><img id="img2" src="images/photoshop/twonature.png"/></p>
+        </td>
+        </tr>
+        
+    <tr>
+        <td>
+            <p>Banner</p>
+            <p><img id="img2" src="images/photoshop/fourth_variant_signed.jpg"/></p>
+        </td>
+        </tr>
+    </table> -->
+    
+    <div id="flip">Kattinst a képért</div>
+    <div id="panel">
+    
+        <img src="images/photoshop/spoiler%20leia2.jpg"/>
+        
+    </div>
+    
+    <br>
+    
+    <div id="flip">Kattinst a képért</div>
+    <div id="panel">
+    
+        <img src="images/photoshop/fourth_variant_signed.jpg"   />
+        
+    </div>
+    
 </body>
 </html>
