@@ -12,11 +12,50 @@
         
         
         $(document).ready(function(){
-            $("#flip").click(function(){
-               $("#panel").slideToggle("slow");
+            
+            $(".panel").css("height", "40px");
+            
+            $(".img").css("display", "none");
+            
+            $(".panel").click(function(){
+              
+                panelHeight = $(this).css('height');
+                
+                if( panelHeight == "40px"){
+                    
+                    
+                    
+                    $(this).animate({height: '500px'}, 'slow', function (e){
+                                    
+                                    $(this).children(".img").css("display", "block");
+                                    $(".log").text("slidedown complete");
+                           
+                                    });
+                    
+                }
+                
+                if( panelHeight == "500px"){
+                              
+                              $(this).animate({height: '40px'}, 'slow', function (e){
+                                    
+                                    $(this).children(".img").css("display", "none");
+                                    $(".log").text("slideup complete");
+                                    
+                                    });
+                    
+                              }
+            
             });
         });
     
+        2982
+        14200
+        3768
+        9750
+        45000
+        1298
+        
+        
     </script>
     
 </head>
@@ -34,45 +73,78 @@
     
     <h2>Eddig kész munkák</h2>
 
-  <!--  <table id="psImages">
+    <!--
+    <table>
     
-    <tr>
         <td>
-            <p>Leia gag</p>
-            <p><img id="img1" src="images/photoshop/spoiler%20leia2.jpg"/></p>
-        </td>
-        </tr>
-    
-    <tr>
-        <td>
-            <p>Tetkó terv</p>
-            <p><img id="img2" src="images/photoshop/twonature.png"/></p>
-        </td>
-        </tr>
         
-    <tr>
-        <td>
-            <p>Banner</p>
-            <p><img id="img2" src="images/photoshop/fourth_variant_signed.jpg"/></p>
-        </td>
-        </tr>
-    </table> -->
-    
-    <div id="flip">Kattinst a képért</div>
-    <div id="panel">
-    
+            <div class="panel">
+        
+        <h1>Leia fun</h1>
+        
         <img src="images/photoshop/spoiler%20leia2.jpg"/>
+        
+        
+    </div>
+        
+        </td>
+        <td>
+        
+            <div class="panel">
+        
+        <h1>Leia fun</h1>
+        
+        <img src="images/photoshop/spoiler%20leia2.jpg"/>
+        
+        
+    </div>
+        
+        </td>
+        <td>
+        
+            <div class="panel">
+        
+        <h1>Leia fun</h1>
+        
+        <img src="images/photoshop/spoiler%20leia2.jpg"/>
+        
+        
+    </div>
+        
+        </td>
+        
+    </table>-->
+    
+    
+    <div class="panel">
+        
+        <h1>Leia fun</h1>
+        
+        <img class="img" src="images/photoshop/spoiler%20leia2.jpg"/>
+        
         
     </div>
     
     <br>
     
-    <div id="flip">Kattinst a képért</div>
-    <div id="panel">
-    
-        <img src="images/photoshop/fourth_variant_signed.jpg"   />
+    <div class="panel">
+        
+        <h1>Tetkó terv</h1>
+        
+        <img class="img" src="images/photoshop/twonature.png"/>
+        
         
     </div>
     
-</body>
+    <br>
+    
+    <div class="panel">
+    
+        <h1>Star Wars The Force Awakens</h1>
+        
+        <img class="img" src="images/photoshop/fourth_variant_signed.jpg"/>
+        
+    </div>
+    
+    </body>
 </html>
