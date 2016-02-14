@@ -169,3 +169,48 @@ img{
     font-family: monospace;
     
 }
+
+.tdTile{
+    
+    
+    /*position*/
+    /*display*/
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    color: #263238;
+    /*color*/
+    background-color: #263238;
+    /*other*/
+    
+}
+
+.tdTile:hover{
+    
+    /*position*/
+    /*display*/
+    /*color*/
+    background-color: #ECEFF1;
+    /*other*/
+    
+}
+
+#tilesDiv{
+    
+    /*position*/
+    position:absolute;
+    
+    /*display*/
+    /*color*/
+    /*other*/
+    
+    
+}
+
+
+
+    /*position*/
+    /*display*/
+    /*color*/
+    /*other*/

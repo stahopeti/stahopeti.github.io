@@ -5,32 +5,81 @@
 <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
 <title>Pomogacs blog</title>
 
+    
     <script language="javascript" type="text/javascript" >
     
-        <!--
-            function lanchid(){
-            
-            var boolean = new Boolean(1);
-            
-            alert(boolean);
-        
-        }
-        //-->
+        $(function(){
+          
+          $(".tdTile").hover(function(){
+              
+              var clickSound = new Audio("sounds/click.wav");
+              clickSound.play();
+              
+          });
+          
+          });
     
     </script>
     
     </head>
 <body>
-
-     <table id="mainTable" >
     
-        <tr>
-         <td onclick="lanchid()" class="tdMain">Magamról</td>
-         <td onclick="javascript:location.href='photoshop.html'" class="tdMain">Photoshop</td>
-         <td onclick="javascript:location.href='photos.html'" class="tdMain">Analóg fotózás</td>
-         </tr>
-         
+    <div id="tilesDiv">
+    
+    <table class="tilesTable">
+    
+    <tr>
+        
+        <td class="tdTile">C</td>
+        <td class="tdTile">l</td>
+        <td onclick="javascript:location.href='aboutme.html'" class="tdTile">i</td>
+        <td class="tdTile">c</td>
+        <td class="tdTile">k</td>
+        
+        </tr>
+    
     </table>
+    
+    <table class="tilesTable">
+    
+    <tr>
+        
+        <td class="tdTile">t</td>
+        <td class="tdTile">h</td>
+        <td class="tdTile">e</td>
+        
+        </tr>
+    
+    </table>
+    
+    <table class="tilesTable">
+    
+    <tr>
+        
+        <td class="tdTile">t</td>
+        <td class="tdTile">h</td>
+        <td class="tdTile">i</td>
+        <td class="tdTile">r</td>
+        <td class="tdTile">d</td>
+        
+        </tr>
+    
+    </table >
+    
+    <table class="tilesTable">
+    
+    <tr>
+        
+        <td class="tdTile">t</td>
+        <td class="tdTile">i</td>
+        <td class="tdTile">l</td>
+        <td class="tdTile">e</td>
+        
+        </tr>
+    
+    </table>
+    
+    </div>
     
 </body>
 </html> 
