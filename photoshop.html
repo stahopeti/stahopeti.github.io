@@ -23,9 +23,11 @@
                 
                 if( panelHeight == "40px"){
                     
+                    imgHeight = ($(this).find(".img").height()) + "px";
                     
+//                    alert(imgHeight);
                     
-                    $(this).animate({height: '500px'}, 'slow', function (e){
+                    $(this).animate({height: $(this).find(".img").height()*1.1}, 'slow', function (e){
                                     
                                     $(this).children(".img").css("display", "block");
                                     $(".log").text("slidedown complete");
@@ -34,7 +36,7 @@
                     
                 }
                 
-                if( panelHeight == "500px"){
+                if( panelHeight != "40px"){
                               
                               $(this).animate({height: '40px'}, 'slow', function (e){
                                     
@@ -119,7 +121,6 @@
     <div class="panel">
         
         <h1>Leia fun</h1>
-        
         <img class="img" src="images/photoshop/spoiler%20leia2.jpg"/>
         
         
@@ -130,7 +131,6 @@
     <div class="panel">
         
         <h1>Tetkó terv</h1>
-        
         <img class="img" src="images/photoshop/twonature.png"/>
         
         
@@ -141,7 +141,6 @@
     <div class="panel">
     
         <h1>Star Wars The Force Awakens</h1>
-        
         <img class="img" src="images/photoshop/fourth_variant_signed.jpg"/>
         
     </div>

@@ -1,6 +1,6 @@
 body{
 
-    background-color: lightblue;
+    background-color: #607D8B;
     
 }
 
@@ -30,7 +30,7 @@ body{
 .tdMain{
     
     width: 30%;
-    background-color:azure;
+    background-color: #ECEFF1;
     height: 40px;
     text-align: center;
     -webkit-transition: all 0.23s ease;
@@ -39,8 +39,8 @@ body{
 
 .tdMain:hover{
     
-    background-color:cadetblue;
-    color: aliceblue;
+    background-color: #CFD8DC;
+/*    color: aliceblue;*/
     -webkit-transform:scale(1.08);
 }
 
@@ -74,21 +74,28 @@ h2{
 .panel{
     
     color: azure;
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: darkslategray;
+    background-color: #263238;
     align-content: center;
     align-items: center;
     
 }
 
+.panel > h1 {
+    
+    text-align: center;
+    
+}
+
 .panel > img {
     
+  padding: 10px;
   width: auto;
   height : auto;
-  max-height: 400px;
-  max-width: 85%;
+  max-height: 90%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
     
