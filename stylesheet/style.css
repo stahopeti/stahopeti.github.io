@@ -1,114 +1,171 @@
 body{
 
+    
+    /*position*/
+    /*display*/
+    /*color*/
     background-color: #607D8B;
+    /*other*/
+    
     
 }
 
 #mainTable{
     
-    width:80%;
+    /*position*/
+    /*display*/
+    width: 80%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    /*color*/
+    /*other*/
     font-family: monospace; 
     font-size: 30px;
-    
-}
-
-#psImages{
-    
-    width:80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: monospace; 
-    font-size: 20px;
     
     
 }
 
 .tdMain{
     
-    width: 30%;
-    background-color: #ECEFF1;
+    
+    /*position*/
+    /*display*/
+    width: 33%;
     height: 40px;
     text-align: center;
+    /*color*/
+    background-color: #ECEFF1;
+    /*other*/
     -webkit-transition: all 0.23s ease;
     
 }
 
 .tdMain:hover{
     
+    
+    /*position*/
+    /*display*/
+    /*color*/
     background-color: #CFD8DC;
-/*    color: aliceblue;*/
+    /*other*/
     -webkit-transform:scale(1.08);
+    
 }
 
 .tdMain:focus{
     
+    /*position*/
+    /*display*/
+    /*color*/
     background-color:cadetblue;
     color: aliceblue;
+    /*other*/
     -webkit-transform:scale(1.08);
     transform:scale(1.08);
+    
+    
 }
 
 h2{
     
+    /*position*/
+    /*display*/
     margin-left: 10%;
+    /*color*/
+    color: #ECEFF1;
+    /*other*/
     font-family: monospace;
-    
     
 }
 
 img{
     
+    /*position*/
+    position: relative;
+    /*display*/
     max-width: 80%;
     max-height: 500px;
-    position: relative;
-    padding: 10px;
+    padding-bottom: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /*color*/
+    /*other*/
     
-
 }
   
 .panel{
     
-    color: azure;
+    /*position*/
+    /*display*/
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #263238;
     align-content: center;
     align-items: center;
+    /*color*/
+    color: azure;
+    background-color: #263238;
+    /*other*/
     
 }
 
 .panel > h1 {
     
+    /*position*/
+    /*display*/
     text-align: center;
+    /*color*/
+    color: #ECEFF1;
+    /*other*/
     font-family: monospace;
-    padding-top: 10px;
     
 }
-/*
-.panel > img {
-    
-  padding: 10px;
-  width: auto;
-  height : auto;
-  max-height: 90%;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-    
-}
-
-*/
 
 .img_div{
     
+    /*position*/
+    /*display*/
     display: none;
+    /*color*/
+    /*other*/
+    
+}
+
+#footer{
+
+    /*position*/
+    bottom: 0;
+    position:static;
+    /*display*/
+    text-align: center;
+    vertical-align: middle;
+    height: 50px; 
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /*color*/
+    /*other*/
+    
+}
+
+#facebookLink{
+    
+    /*position*/
+    /*display*/
+/*    text-align: left;*/
+    /*color*/
+    /*other*/
+    
+}
+
+#tdFooter{
+    
+    /*position*/
+    /*display*/
+    /*color*/
+    /*other*/
+    font-family: monospace;
     
 }
