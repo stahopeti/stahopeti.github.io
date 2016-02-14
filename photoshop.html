@@ -13,43 +13,18 @@
         
         $(document).ready(function(){
             
-            $(".panel").css("height", "40px");
             
-            $(".img").css("display", "none");
-            
-            $(".panel").click(function(){
-              
-                panelHeight = $(this).css('height');
+            $(".title").click(function(){
                 
-                if( panelHeight == "40px"){
-                    
-                    imgHeight = ($(this).find(".img").height()) + "px";
-                    
-//                    alert(imgHeight);
-                    
-                    $(this).animate({height: $(this).find(".img").height()*1.1}, 'slow', function (e){
-                                    
-                                    $(this).children(".img").css("display", "block");
-                                    $(".log").text("slidedown complete");
-                           
-                                    });
-                    
-                }
+               $(this).next('div').slideToggle();
                 
-                if( panelHeight != "40px"){
-                              
-                              $(this).animate({height: '40px'}, 'slow', function (e){
-                                    
-                                    $(this).children(".img").css("display", "none");
-                                    $(".log").text("slideup complete");
-                                    
-                                    });
-                    
-                              }
+                $(this).parent().siblings().children().next().slideUp();
+                return false;
+                
+            });        
             
-            });
         });
-    
+            
         2982
         14200
         3768
@@ -74,75 +49,25 @@
     </table>
     
     <h2>Eddig kész munkák</h2>
-
-    <!--
-    <table>
-    
-        <td>
-        
-            <div class="panel">
-        
-        <h1>Leia fun</h1>
-        
-        <img src="images/photoshop/spoiler%20leia2.jpg"/>
-        
-        
-    </div>
-        
-        </td>
-        <td>
-        
-            <div class="panel">
-        
-        <h1>Leia fun</h1>
-        
-        <img src="images/photoshop/spoiler%20leia2.jpg"/>
-        
-        
-    </div>
-        
-        </td>
-        <td>
-        
-            <div class="panel">
-        
-        <h1>Leia fun</h1>
-        
-        <img src="images/photoshop/spoiler%20leia2.jpg"/>
-        
-        
-    </div>
-        
-        </td>
-        
-    </table>-->
-    
     
     <div class="panel">
-        
-        <h1>Leia fun</h1>
-        <img class="img" src="images/photoshop/spoiler%20leia2.jpg"/>
-        
-        
+    <h1 class="title">Leia fun</h1>
+    <div class="img_div">
+      <img src="images/photoshop/spoiler%20leia2.jpg"/>
+    </div>
     </div>
     
-    <br>
-    
     <div class="panel">
-        
-        <h1>Tetkó terv</h1>
-        <img class="img" src="images/photoshop/twonature.png"/>
-        
-        
+    <h1 class="title">Tetoválás terv</h1>
+    <div class="img_div">
+      <img src="images/photoshop/twonature.png"/>
     </div>
-    
-    <br>
-    
-    <div class="panel">
-    
-        <h1>Star Wars The Force Awakens</h1>
-        <img class="img" src="images/photoshop/fourth_variant_signed.jpg"/>
         
+    </div><div class="panel">
+    <h1 class="title">Star wars banner</h1>
+    <div class="img_div">
+      <img src="images/photoshop/fourth_variant_signed.jpg"/>
+    </div>
     </div>
     
     </body>
