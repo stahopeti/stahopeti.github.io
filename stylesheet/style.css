@@ -3,6 +3,7 @@ body{
     
     /*position*/
     /*display*/
+    margin: 0px;
     /*color*/
     background-color: #607D8B;
     /*other*/
@@ -139,8 +140,6 @@ img{
     bottom: 0;
     position:static;
     /*display*/
-    text-align: center;
-    vertical-align: middle;
     height: 50px; 
     width: 80%;
     margin-left: 10%;
@@ -150,15 +149,6 @@ img{
     
 }
 
-#facebookLink{
-    
-    /*position*/
-    /*display*/
-/*    text-align: left;*/
-    /*color*/
-    /*other*/
-    
-}
 
 #tdFooter{
     
@@ -175,8 +165,6 @@ img{
     
     /*position*/
     /*display*/
-    text-align: center;
-    vertical-align: middle;
     width: 100px;
     height: 100px;
     color: #263238;
@@ -200,8 +188,20 @@ img{
     
     /*position*/
     position:absolute;
-    
+    left:0; right:0;
+    top:0; bottom:0;
+	margin:auto;
+	
     /*display*/
+    width: 500px;
+    height: 400px;
+	max-width:100%;
+	max-height:100%;
+	overflow:visible;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+    font-family: monospace;
     /*color*/
     /*other*/
     
